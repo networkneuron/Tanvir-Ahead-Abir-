@@ -4,9 +4,16 @@ import User from '../models/User.js'; // Import User model
 
 dotenv.config();
 
+// --- FIX START ---
+// In a real-world application, this should be in a .env file.
+// We are adding it here directly to resolve the connection error for now.
+const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://tanvirmahin24:tanvirmahin24@tanvirmahin.w16j0mc.mongodb.net/?retryWrites=true&w=majority&appName=tanvirmahin";
+// --- FIX END ---
+
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
+    // FIX: Use the MONGO_URI variable defined above.
+    const conn = await mongoose.connect(MONGO_URI);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
 
     // Seed admin user if it doesn't exist
