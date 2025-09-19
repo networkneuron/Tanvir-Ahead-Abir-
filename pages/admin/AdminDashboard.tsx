@@ -1,21 +1,24 @@
 import React from 'react';
-import { useAuth } from '../../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
 import DashboardWidgets from '../../components/admin/DashboardWidgets';
+import RevenueChart from '../../components/admin/RevenueChart';
 
 const AdminDashboard: React.FC = () => {
-  const { logout } = useAuth();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    logout();
-    navigate('/admin/login');
-  };
-
   return (
-    <div>
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
-          <DashboardWidgets />
+    <div className="space-y-8">
+        {/* Welcome Header */}
+        <div>
+            <h1 className="text-3xl font-extrabold text-white">Dashboard Overview</h1>
+            <p className="mt-2 text-lg text-gray-400">
+                Welcome back! Here's a snapshot of your agency's performance.
+            </p>
+        </div>
+        
+        {/* Stats Widgets */}
+        <DashboardWidgets />
+
+        {/* Revenue Chart */}
+        <div className="mt-8">
+          <RevenueChart />
         </div>
     </div>
   );

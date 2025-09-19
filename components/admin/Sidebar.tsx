@@ -100,4 +100,8 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, setSidebarOpen }) => {
         </div>
       </div>
     </div>
-  
+  );
+};
+
+// FIX: Added a default export to allow the component to be imported correctly.
+export default Sidebar;
