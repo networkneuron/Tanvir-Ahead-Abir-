@@ -1,0 +1,1 @@
+full contents of pages/admin/financials/InvoicesPage.tsx

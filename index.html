@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Motion Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Basic smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom scrollbar for a more modern look */
+      body.dark ::-webkit-scrollbar {
+        width: 8px;
+      }
+      body.dark ::-webkit-scrollbar-track {
+        background: #111827; /* dark-gray */
+      }
+      body.dark ::-webkit-scrollbar-thumb {
+        background: #4f46e5; /* indigo-600 */
+        border-radius: 10px;
+      }
+      body.dark ::-webkit-scrollbar-thumb:hover {
+        background: #6366f1; /* indigo-500 */
+      }
+
+      body.light ::-webkit-scrollbar {
+        width: 8px;
+      }
+      body.light ::-webkit-scrollbar-track {
+        background: #f3f4f6;
+      }
+      body.light ::-webkit-scrollbar-thumb {
+        background: #8b5cf6;
+        border-radius: 10px;
+      }
+      body.light ::-webkit-scrollbar-thumb:hover {
+        background: #a78bfa;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "three": "https://aistudiocdn.com/three@^0.166.1",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "url": "https://aistudiocdn.com/url@^0.11.4",
+    "jsonwebtoken": "https://aistudiocdn.com/jsonwebtoken@^9.0.2",
+    "cors": "https://aistudiocdn.com/cors@^2.8.5",
+    "dotenv": "https://aistudiocdn.com/dotenv@^17.2.2",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.2",
+    "multer": "https://aistudiocdn.com/multer@^2.0.2",
+    "mongoose": "https://aistudiocdn.com/mongoose@^8.18.1",
+    "swagger-ui-express": "https://aistudiocdn.com/swagger-ui-express@^5.0.1",
+    "express-validator": "https://aistudiocdn.com/express-validator@^7.2.1",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.6",
+    "swagger-jsdoc": "https://aistudiocdn.com/swagger-jsdoc@^6.2.8",
+    "recharts": "https://aistudiocdn.com/recharts@^2.13.2",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^3.8.2"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
