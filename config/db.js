@@ -7,7 +7,7 @@ dotenv.config();
 // --- FIX START ---
 // In a real-world application, this should be in a .env file.
 // We are adding it here directly to resolve the connection error for now.
-const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://tanvirmahin24:tanvirmahin24@tanvirmahin.w16j0mc.mongodb.net/?retryWrites=true&w=majority&appName=tanvirmahin";
+const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://amd254371_db_user:cbgD8umbnk5gNdfV@cluster0.rkgucvc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // --- FIX END ---
 
 const connectDB = async () => {
